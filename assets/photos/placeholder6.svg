@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E7A1"/>
+      <stop offset="50%" stop-color="#F4C2D7"/>
+      <stop offset="100%" stop-color="#800020"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg6)"/>
+  <!-- Sweet Rasamalai Bowl & Saffron Pistachio garnish -->
+  <circle cx="300" cy="220" r="100" fill="#FFFDF8" opacity="0.35"/>
+  <ellipse cx="300" cy="240" rx="90" ry="40" fill="#800020" opacity="0.2"/>
+  <ellipse cx="300" cy="230" rx="80" ry="32" fill="#FFFDF8"/>
+  <ellipse cx="300" cy="225" rx="72" ry="26" fill="#F6E7A1"/>
+  <!-- Rasamalai patties -->
+  <circle cx="280" cy="222" r="22" fill="#FFF8F0"/>
+  <circle cx="320" cy="224" r="20" fill="#FFF8F0"/>
+  <circle cx="300" cy="215" r="18" fill="#FFF8F0"/>
+  <!-- Saffron & Pistachio garnish dots -->
+  <circle cx="280" cy="220" r="3" fill="#708238"/>
+  <circle cx="320" cy="222" r="3" fill="#800020"/>
+  <circle cx="298" cy="213" r="2.5" fill="#708238"/>
+  <!-- Little heart -->
+  <path d="M300 135 C315 115 340 125 340 145 C340 165 315 185 300 200 C285 185 260 165 260 145 C260 125 285 115 300 135 Z" fill="#800020"/>
+  <!-- Camera badge -->
+  <rect x="180" y="380" width="240" height="130" rx="20" fill="#FFFDF8" opacity="0.9"/>
+  <circle cx="300" cy="430" r="24" fill="#800020"/>
+  <circle cx="300" cy="430" r="12" fill="#F6E7A1"/>
+  <rect x="250" y="395" width="20" height="10" rx="3" fill="#800020"/>
+  <text x="300" y="485" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" fill="#800020" text-anchor="middle">Photo 6</text>
+  <text x="300" y="502" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#654321" text-anchor="middle">(Replace with: photo6.jpg)</text>
+</svg>

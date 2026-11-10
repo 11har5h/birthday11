@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy Birthday, Divya Shree | 11:11 — A Beautiful Coincidence</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="A romantic, personalized birthday universe created exclusively for Divya Shree. 11:11 — A Beautiful Coincidence.">
+  <meta name="theme-color" content="#800020">
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Dancing Script, Caveat, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Atmosphere Canvases -->
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+  <canvas id="sparkles-canvas" aria-hidden="true"></canvas>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Navigation & Audio Pill -->
+  <header class="floating-header">
+    <div class="wish-pill" id="wish-badge" title="11:11 — Make a wish!">
+      <span class="sparkle-icon">✨</span>
+      <span class="time-text">11:11</span>
+      <span class="label-text">A Beautiful Coincidence</span>
+    </div>
+
+    <div class="music-pill" id="music-player">
+      <div class="vinyl-disc" id="music-vinyl">
+        <div class="vinyl-center"></div>
+      </div>
+      <div class="music-info">
+        <span class="music-title" id="music-status">11:11 — Our Melody</span>
+      </div>
+      <button class="music-btn" id="music-toggle" aria-label="Toggle background music">
+        <span class="icon">▶</span>
+        <span>Play</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================== -->
+  <!-- SECTION 1: THE ENVELOPE EXPERIENCE (Full-Screen Intro) -->
+  <!-- ============================================================== -->
+  <section id="envelope-section" class="screen-section envelope-screen active">
+    <div class="envelope-container">
+      <div class="greeting-intro">
+        <span class="intro-tag">A Special Gift Just For You</span>
+        <h1 class="intro-headline">Hey, birthday girl...</h1>
+        <p class="intro-subtext">Someone has made a little world just for you.</p>
+      </div>
+
+      <!-- 3D Realistic Envelope -->
+      <div class="envelope-wrapper" id="envelope-wrapper">
+        <div class="envelope-pocket">
+          <!-- Back flap -->
+          <div class="envelope-back"></div>
+          
+          <!-- Inside Letter Card -->
+          <div class="envelope-letter" id="envelope-letter">
+            <div class="letter-inner">
+              <span class="letter-stamp">11:11</span>
+              <p class="letter-teaser-to">To Divya Shree,</p>
+              <h3 class="letter-teaser-text">Happy Birthday, My Rasamalai 🍯</h3>
+              <p class="letter-teaser-sub">Step inside our little universe...</p>
+            </div>
+          </div>
+
+          <!-- Front envelope flaps -->
+          <div class="envelope-front-left"></div>
+          <div class="envelope-front-right"></div>
+          <div class="envelope-front-bottom"></div>
+          
+          <!-- Top Triangle Flap -->
+          <div class="envelope-flap" id="envelope-flap">
+            <!-- Wax Seal -->
+            <div class="wax-seal" id="wax-seal" title="Click to break the seal">
+              <div class="seal-inner">
+                <span class="seal-emblem">11:11</span>
+                <span class="seal-heart">♥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="envelope-actions">
+        <button id="open-surprise-btn" class="btn btn-primary pulse-btn">
+          <span class="btn-sparkle">✨</span>
+          <span>Open your surprise</span>
+          <span class="btn-sparkle">✨</span>
+        </button>
+        <p class="envelope-hint">Click the button or touch the wax seal to unlock your world</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN EXPERIENCE WRAPPER (revealed on open) -->
+  <main id="main-content" class="main-content-hidden">
+
+    <!-- ============================================================== -->
+    <!-- SECTION 2: BIRTHDAY HERO -->
+    <!-- ============================================================== -->
+    <section id="hero-section" class="hero-section">
+      <!-- Animated butterflies -->
+      <div class="butterflies-container" aria-hidden="true">
+        <div class="butterfly b1">🦋</div>
+        <div class="butterfly b2">🦋</div>
+        <div class="butterfly b3">🦋</div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-tag-wrap">
+          <span class="hero-date-badge">November 11 • 11:11</span>
+          <span class="hero-nickname-pill">My Rasamalai 🍯</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-sub">HAPPY BIRTHDAY,</span>
+          <span class="hero-title-main">MY DIVYAAA!</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          "11:11 — The day my favourite person was born."
+        </p>
+
+        <p class="hero-quote">
+          I made this little world because you deserve something as beautiful as you are.
+        </p>
+
+        <div class="hero-actions">
+          <button id="wish-btn" class="btn btn-secondary">
+            <span>Make a 11:11 Wish 🌟</span>
+          </button>
+          <a href="#about-section" class="btn btn-outline">
+            <span>Explore Our World ↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>Scroll gently</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 3: A LITTLE ABOUT YOU -->
+    <!-- ============================================================== -->
+    <section id="about-section" class="content-section">
+      <div class="section-header text-center">
+        <span class="section-tag">A Celebration of You</span>
+        <h2 class="section-title">Everything about you is beautiful.</h2>
+        <p class="section-description">
+          Six little reminders (out of a million reasons) why I fall for you over and over again.
+        </p>
+      </div>
+
+      <div class="personality-grid">
+        <!-- Card 1: Eyes -->
+        <div class="personality-card" data-card="eyes">
+          <div class="card-icon-wrap">
+            <span class="card-icon">✨</span>
+          </div>
+          <h3 class="card-title">Your Beautiful Eyes</h3>
+          <p class="card-text">
+            The very first thing that captivated me. They hold so much warmth, depth, and sparkling innocence. I could look into them forever and still get lost.
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "They shine brightest when you talk about things you love."
+          </div>
+        </div>
+
+        <!-- Card 2: Hair -->
+        <div class="personality-card" data-card="hair">
+          <div class="card-icon-wrap">
+            <span class="card-icon">🌸</span>
+          </div>
+          <h3 class="card-title">Your Gorgeous Hair</h3>
+          <p class="card-text">
+            Soft, effortlessly flowing, and always smelling so lovely. Whether it's messy, tied up, or dancing in the evening breeze—every single strand is perfection to me.
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "Gently tucking it behind your ear is my favorite reflex."
+          </div>
+        </div>
+
+        <!-- Card 3: Smile -->
+        <div class="personality-card" data-card="smile">
+          <div class="card-icon-wrap">
+            <span class="card-icon">🍯</span>
+          </div>
+          <h3 class="card-title">Your Sweet Smile</h3>
+          <p class="card-text">
+            It illuminates any room in an instant. My absolute favorite moment in this universe is when you laugh out loud and call me "mine". That's when my heart melts completely.
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "Your laugh is my favorite soundtrack in the world."
+          </div>
+        </div>
+
+        <!-- Card 4: Personality -->
+        <div class="personality-card" data-card="personality">
+          <div class="card-icon-wrap">
+            <span class="card-icon">🕊️</span>
+          </div>
+          <h3 class="card-title">Your Charming Soul</h3>
+          <p class="card-text">
+            You are naturally charming, lovely, and so deeply kind. You treat people with genuine warmth and make everyone around you feel valued and safe.
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "Your kindness makes this world a softer, better place."
+          </div>
+        </div>
+
+        <!-- Card 5: Angry Bird -->
+        <div class="personality-card highlight-card" data-card="angry-bird">
+          <div class="card-icon-wrap">
+            <span class="card-icon">🐥</span>
+          </div>
+          <h3 class="card-title">My Cute 'Angry Bird'</h3>
+          <p class="card-text">
+            Whenever you get a little annoyed or pout with those adorable cute expressions... you try so hard to look angry, but you honestly look 1000x cuter!
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "Even your angry-bird pouts have my whole heart."
+          </div>
+        </div>
+
+        <!-- Card 6: Emotional Heart -->
+        <div class="personality-card" data-card="emotional">
+          <div class="card-icon-wrap">
+            <span class="card-icon">💖</span>
+          </div>
+          <h3 class="card-title">Your Emotional Heart</h3>
+          <p class="card-text">
+            You appreciate the smallest gestures and feel emotions deeply. That sensitivity is not a weakness—it's what makes you so precious, genuine, and rare.
+          </p>
+          <div class="card-whisper">
+            <span>Harsh's note:</span> "I promise to always handle your heart with care."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 4: OUR LITTLE WORLD (Scrapbook Polaroid Gallery) -->
+    <!-- ============================================================== -->
+    <section id="gallery-section" class="content-section scrapbook-section">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Scrapbook</span>
+        <h2 class="section-title">Every moment with you is my favourite.</h2>
+        <p class="section-description">
+          Memories captured in time. Place your real photographs in the assets folder to complete our album.
+        </p>
+
+        <!-- Quick photo test uploader helper for user -->
+        <div class="photo-tools">
+          <button id="toggle-photo-modal-btn" class="btn btn-sm btn-outline">
+            <span>📷 Quick Photo Previewer</span>
+          </button>
+          <span class="photo-info-note">Or simply place <code>photo1.jpg</code> to <code>photo11.jpg</code> in <code>assets/photos/</code></span>
+        </div>
+      </div>
+
+      <div class="polaroid-gallery">
+        <!-- Polaroid 1 -->
+        <div class="polaroid-item tilt-left" data-index="1">
+          <div class="washi-tape tape-pink"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo1.jpg" onerror="this.src='assets/photos/placeholder1.svg'" alt="Photo 1" class="polaroid-img" id="img-slot-1">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 01 ✨</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <div class="polaroid-item tilt-right" data-index="2">
+          <div class="washi-tape tape-yellow"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo2.jpg" onerror="this.src='assets/photos/placeholder2.svg'" alt="Photo 2" class="polaroid-img" id="img-slot-2">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 02 ♥</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="polaroid-item tilt-slight-left" data-index="3">
+          <div class="washi-tape tape-olive"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo3.jpg" onerror="this.src='assets/photos/placeholder3.svg'" alt="Photo 3" class="polaroid-img" id="img-slot-3">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 03 🌸</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 4 -->
+        <div class="polaroid-item tilt-slight-right" data-index="4">
+          <div class="washi-tape tape-lavender"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo4.jpg" onerror="this.src='assets/photos/placeholder4.svg'" alt="Photo 4" class="polaroid-img" id="img-slot-4">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 04 💫</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 5 -->
+        <div class="polaroid-item tilt-left" data-index="5">
+          <div class="washi-tape tape-burgundy"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo5.jpg" onerror="this.src='assets/photos/placeholder5.svg'" alt="Photo 5" class="polaroid-img" id="img-slot-5">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 05 💖</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 6 -->
+        <div class="polaroid-item tilt-right" data-index="6">
+          <div class="washi-tape tape-pink"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo6.jpg" onerror="this.src='assets/photos/placeholder6.svg'" alt="Photo 6" class="polaroid-img" id="img-slot-6">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 06 🍯</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 7 -->
+        <div class="polaroid-item tilt-slight-left" data-index="7">
+          <div class="washi-tape tape-yellow"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo7.jpg" onerror="this.src='assets/photos/placeholder7.svg'" alt="Photo 7" class="polaroid-img" id="img-slot-7">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 07 🌟</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 8 -->
+        <div class="polaroid-item tilt-slight-right" data-index="8">
+          <div class="washi-tape tape-olive"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo8.jpg" onerror="this.src='assets/photos/placeholder8.svg'" alt="Photo 8" class="polaroid-img" id="img-slot-8">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 08 💫</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 9 -->
+        <div class="polaroid-item tilt-left" data-index="9">
+          <div class="washi-tape tape-lavender"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo9.jpg" onerror="this.src='assets/photos/placeholder9.svg'" alt="Photo 9" class="polaroid-img" id="img-slot-9">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 09 ✨</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 10 -->
+        <div class="polaroid-item tilt-right" data-index="10">
+          <div class="washi-tape tape-burgundy"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo10.jpg" onerror="this.src='assets/photos/placeholder10.svg'" alt="Photo 10" class="polaroid-img" id="img-slot-10">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 10 💖</p>
+              <span class="caption-date">11:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid 11 (The 11:11 Special) -->
+        <div class="polaroid-item tilt-slight-left" data-index="11">
+          <div class="washi-tape tape-pink"></div>
+          <div class="polaroid-frame">
+            <div class="polaroid-img-wrap">
+              <img src="assets/photos/photo11.jpg" onerror="this.src='assets/photos/placeholder11.svg'" alt="Photo 11" class="polaroid-img" id="img-slot-11">
+            </div>
+            <div class="polaroid-caption">
+              <p class="caption-text">Memory 11 🍯</p>
+              <span class="caption-date">11:11 • My Wish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 5: OUR STORY (Timeline) -->
+    <!-- ============================================================== -->
+    <section id="story-section" class="content-section timeline-section">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Timeline</span>
+        <h2 class="section-title">A Beautiful Coincidence</h2>
+        <p class="section-description">
+          How two paths crossed in 2026 and turned an ordinary coincidence into our greatest adventure.
+        </p>
+      </div>
+
+      <div class="story-timeline">
+        <!-- Milestone 1 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">🌸</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">2026 • Chapter 1</span>
+            <h3 class="step-title">Meeting Through Friends</h3>
+            <p class="step-desc">
+              We met through mutual friends on what seemed like any other day. Neither of us had any idea that a simple introduction would completely rewrite my world.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">💬</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 2</span>
+            <h3 class="step-title">Conversations That Never Wanted to End</h3>
+            <p class="step-desc">
+              It started so naturally. Messages turned to late-night conversations. We didn't have to pretend or force anything—talking to you felt like exhaling after holding my breath.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">💘</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 3</span>
+            <h3 class="step-title">I Fell First</h3>
+            <p class="step-desc">
+              I can't pinpoint the exact second, but my first impression never left me: you were the most beautiful girl I had ever seen. Before I even realized it, my heart was already yours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">🫣</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 4</span>
+            <h3 class="step-title">The First Meeting & My Nervous Heart</h3>
+            <p class="step-desc">
+              The first time we met just the two of us. I was nervous beyond belief, my palms were sweating, but the instant you smiled and looked into my eyes, all the anxiety vanished.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 5 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">💌</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 5</span>
+            <h3 class="step-title">I Confessed First</h3>
+            <p class="step-desc">
+              Keeping my feelings to myself was impossible. Confessing to you was both the scariest and easiest thing I've ever done, because every beat of my heart was screaming your name.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 6 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">🫂</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 6</span>
+            <h3 class="step-title">Our First Hug</h3>
+            <p class="step-desc">
+              Wrapping my arms around you and feeling your warmth against me. In that single moment, the entire world stopped spinning. That hug was the moment I found my home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 7 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">☕</span>
+          </div>
+          <div class="step-card">
+            <span class="step-year">Chapter 7</span>
+            <h3 class="step-title">Five+ Beautiful Dates & Counting</h3>
+            <p class="step-desc">
+              We've met more than five times now, shared food, taken walks, and laughed until our stomachs hurt. And through every single date, my favourite thing remains unchanged: simply being beside you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 8 -->
+        <div class="timeline-step">
+          <div class="step-dot">
+            <span class="dot-icon">♾️</span>
+          </div>
+          <div class="step-card highlight-step">
+            <span class="step-year">Forever</span>
+            <h3 class="step-title">Choosing Each Other</h3>
+            <p class="step-desc">
+              Our love didn't just stay a coincidence. Every single morning, I wake up and consciously choose you. And I'll keep choosing you through every tomorrow we get.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 6: A LETTER FOR YOU -->
+    <!-- ============================================================== -->
+    <section id="letter-section" class="content-section letter-experience-section">
+      <div class="section-header text-center">
+        <span class="section-tag">From My Heart To Yours</span>
+        <h2 class="section-title">Something I've always wanted to tell you.</h2>
+        <p class="section-description">
+          A genuine handwritten letter written exclusively for Divyaaa.
+        </p>
+      </div>
+
+      <div class="parchment-letter-wrapper">
+        <div class="parchment-letter">
+          <div class="letter-wax-stamp">
+            <span>11:11</span>
+          </div>
+          <div class="letter-date">November 11, 2026</div>
+
+          <h3 class="letter-salutation">My Dearest Divyaaa,</h3>
+          <p class="letter-nicknames">My Rasamalai, Thango, Chellakutty...</p>
+
+          <div class="letter-body">
+            <p>
+              Happy Birthday, my love. Today is 11:11, and just like the magic people associate with that time, having you in my life has been the most beautiful coincidence of my existence.
+            </p>
+            <p>
+              From the day we met through friends in 2026, you completely changed how I see the world. My very first thought when I saw you was simply, <em>"She is so breathtakingly beautiful."</em> And getting to know you—your kindness, your charming soul, and yes, even that cute little angry-bird side of yours—has made me fall even deeper.
+            </p>
+            <p>
+              You don't realize how magnetic you are. Your eyes hold an entire universe of warmth, and your hair looks effortlessly pretty no matter how messy it is. But my absolute favorite thing in this entire world is when you laugh out loud and call me <strong>"mine"</strong>. In that exact second, nothing else matters. Simply being beside you is my peace.
+            </p>
+            <p class="letter-reassurance-highlight">
+              Divya, I know that sometimes in quiet moments, you worry that I might leave you. You get emotional and fear that people walk away. I want you to read this and remember it every time that doubt creeps in:
+            </p>
+            <blockquote class="letter-quote">
+              "You are not someone I ever want to lose. You are the girl I want to keep growing with. No matter how many days pass, how many things change, or how many birthdays we celebrate—I will keep choosing you. Every single time."
+            </blockquote>
+            <p>
+              You appreciate the smallest gestures, and I promise to never stop giving you reasons to feel cherished. Thank you for being my favorite person, my greatest joy, and my sweetest Rasamalai.
+            </p>
+            <p class="letter-signoff">
+              Forever and always yours,<br>
+              <span class="letter-signature">Harsh ♥</span>
+            </p>
+          </div>
+
+          <div class="letter-footer-actions">
+            <button id="copy-letter-btn" class="btn btn-sm btn-outline">
+              <span>📋 Copy Letter</span>
+            </button>
+            <button id="print-letter-btn" class="btn btn-sm btn-outline">
+              <span>🖨️ Save as Keepsake</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 7: HER DREAM WORLD (SWITZERLAND) -->
+    <!-- ============================================================== -->
+    <section id="dreams-section" class="content-section switzerland-section">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Bucket List</span>
+        <h2 class="section-title">One day, somewhere with you.</h2>
+        <p class="section-description">
+          A glimpse into the magical place we are going to explore together.
+        </p>
+      </div>
+
+      <div class="switzerland-experience-card">
+        <div class="swiss-landscape-banner">
+          <div class="swiss-sun"></div>
+          <div class="swiss-mountains">
+            <div class="peak p1"></div>
+            <div class="peak p2"></div>
+            <div class="peak p3"></div>
+          </div>
+          <div class="swiss-overlay-text">
+            <span class="swiss-badge">Destination: Switzerland 🇨🇭</span>
+            <h3 class="swiss-title">Snow Peaks, Sunsets & Our Future</h3>
+          </div>
+        </div>
+
+        <div class="dream-checklist-wrap">
+          <h4 class="checklist-title">Our Romantic Destination:</h4>
+          <ul class="dream-checklist">
+            <li class="checked">
+              <span class="check-icon">✓</span>
+              <span>Switzerland mountain train rides & snow walks</span>
+            </li>
+          </ul>
+
+          <div class="dream-action-center">
+            <button id="go-there-btn" class="btn btn-primary pulse-btn">
+              <span>Let's go there someday ✨</span>
+            </button>
+          </div>
+
+          <!-- Boarding Pass Reveal Container -->
+          <div id="boarding-pass-card" class="boarding-pass hidden">
+            <div class="pass-header">
+              <div class="airline-logo">✈️ 11:11 AIRWAYS</div>
+              <div class="ticket-type">FIRST CLASS • FOREVER PASS</div>
+            </div>
+            <div class="pass-body">
+              <div class="pass-row">
+                <div class="pass-col">
+                  <span class="pass-label">PASSENGER</span>
+                  <strong class="pass-val">DIVYA SHREE & HARSH</strong>
+                </div>
+                <div class="pass-col">
+                  <span class="pass-label">SEAT</span>
+                  <strong class="pass-val">SIDE BY SIDE ♥</strong>
+                </div>
+              </div>
+              <div class="pass-row">
+                <div class="pass-col">
+                  <span class="pass-label">FROM</span>
+                  <strong class="pass-val">2026 (WHERE WE BEGAN)</strong>
+                </div>
+                <div class="pass-col">
+                  <span class="pass-label">DESTINATION</span>
+                  <strong class="pass-val">SWITZERLAND & EVERY SUNSET</strong>
+                </div>
+              </div>
+            </div>
+            <div class="pass-footer">
+              <span class="barcode">||| | |||| || | |||| || ||| ||||</span>
+              <span class="pass-valid">VALID FOR: A LIFETIME OF MEMORIES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 9: MY PROMISE TO YOU -->
+    <!-- ============================================================== -->
+    <section id="promise-section" class="content-section promise-section">
+      <div class="promise-container">
+        <span class="promise-tag">A Promise Written in Gold</span>
+        <h2 class="promise-title">One thing I want you to know.</h2>
+
+        <div class="promise-quote-card">
+          <p class="quote-text-primary">
+            "No matter how many days pass, how many things change, or how many birthdays we celebrate, I will keep choosing you.
+          </p>
+          <p class="quote-text-secondary">
+            You are not someone I want to lose.
+            <br>
+            You are someone I want to keep growing with."
+          </p>
+        </div>
+
+        <div class="reassurance-box">
+          <div class="reassurance-heart">🔒</div>
+          <h3 class="reassurance-title">Whenever your heart feels worried:</h3>
+          <p class="reassurance-desc">
+            Take a deep breath and remember that you are loved unconditionally. You never have to doubt my presence in your life. I am right here beside you, today, tomorrow, and always.
+          </p>
+          <button id="seal-promise-btn" class="btn btn-secondary pulse-btn">
+            <span>Hold to Seal Our Promise 💖</span>
+          </button>
+          <div id="promise-sealed-msg" class="promise-sealed-badge hidden">
+            <span>✨ Promise sealed in my heart forever. You are safe with me, Divya. ✨</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 10: FINAL SURPRISE -->
+    <!-- ============================================================== -->
+    <section id="final-surprise-section" class="screen-section final-surprise-screen">
+      <div class="night-sky-backdrop">
+        <div class="starfield"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star s2"></div>
+      </div>
+
+      <div class="final-content-center">
+        <div class="messages-container" id="reveal-messages-wrapper">
+          <p class="reveal-message" data-step="1">To my favourite girl...</p>
+          <p class="reveal-message" data-step="2">Thank you for being you.</p>
+          <p class="reveal-message" data-step="3">Happy Birthday, Divya Shree.</p>
+          <p class="reveal-message" data-step="4">And just like 11:11, I will always wish for you.</p>
+          <h2 class="reveal-message finale-text" data-step="5">I LOVE YOU, MY RASAMALAI.</h2>
+        </div>
+
+        <div class="final-actions" id="final-actions-wrap">
+          <button id="replay-btn" class="btn btn-primary pulse-btn">
+            <span>Replay our little world ↺</span>
+          </button>
+          <p class="final-footnote">Made with all my heart exclusively for Divya Shree ♥</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- PHOTO TEST PREVIEW MODAL -->
+  <!-- ============================================================== -->
+  <div id="photo-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Photo Previewer">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">📷 Test Photos Live</h3>
+        <button id="close-modal-btn" class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-instructions">
+          You can test how Divya's photos will look directly in your browser! Select a photo file from your phone or computer for any slot:
+        </p>
+
+        <div class="upload-slots-grid">
+          <div class="upload-slot">
+            <label for="slot-input-1">Photo 1:</label>
+            <input type="file" id="slot-input-1" accept="image/*" data-slot="1">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-2">Photo 2:</label>
+            <input type="file" id="slot-input-2" accept="image/*" data-slot="2">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-3">Photo 3:</label>
+            <input type="file" id="slot-input-3" accept="image/*" data-slot="3">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-4">Photo 4:</label>
+            <input type="file" id="slot-input-4" accept="image/*" data-slot="4">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-5">Photo 5:</label>
+            <input type="file" id="slot-input-5" accept="image/*" data-slot="5">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-6">Photo 6:</label>
+            <input type="file" id="slot-input-6" accept="image/*" data-slot="6">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-7">Photo 7:</label>
+            <input type="file" id="slot-input-7" accept="image/*" data-slot="7">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-8">Photo 8:</label>
+            <input type="file" id="slot-input-8" accept="image/*" data-slot="8">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-9">Photo 9:</label>
+            <input type="file" id="slot-input-9" accept="image/*" data-slot="9">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-10">Photo 10:</label>
+            <input type="file" id="slot-input-10" accept="image/*" data-slot="10">
+          </div>
+          <div class="upload-slot">
+            <label for="slot-input-11">Photo 11 (11:11 Wish):</label>
+            <input type="file" id="slot-input-11" accept="image/*" data-slot="11">
+          </div>
+        </div>
+
+        <div class="modal-tip">
+          <strong>Permanent Way:</strong> Save files as <code>photo1.jpg</code> to <code>photo11.jpg</code> inside <code>assets/photos/</code> and they will appear automatically!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
